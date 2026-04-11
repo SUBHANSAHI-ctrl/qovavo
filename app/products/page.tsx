@@ -1,42 +1,43 @@
 import ProductCard from '@/src/components/ProductCard';
+import Link from 'next/link';
 
 export default function Products() {
   return (
-    <main className="min-h-screen bg-[#0f172a]">
+    <main className="min-h-screen bg-[#08090F] text-[#DDE4F0]">
       <section className="py-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
-              Our Products
+        <div className="max-w-6xl mx-auto">
+          <div className="mb-12">
+            <p className="text-xs font-semibold text-[#4361EE] uppercase tracking-widest mb-3">Our Products</p>
+            <h1 className="text-4xl sm:text-5xl font-bold text-[#DDE4F0] mb-3 tracking-tight">
+              Products Built for Traders
             </h1>
-            <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-              Discover our innovative solutions designed to enhance your workflow and drive success
+            <p className="text-[#7B8BB0] max-w-xl">
+              Discover our tools designed to help traders understand their performance and improve with real data.
             </p>
           </div>
-          <div className="flex justify-center">
-            <div className="w-full max-w-md">
-              <ProductCard
-                title="Traderos Lite"
-                description="A powerful trading platform with advanced analytics and real-time market data. Experience the future of trading with our comprehensive tools."
-                link="https://traderos.qovavo.com"
-                isExternal={true}
-              />
-            </div>
+
+          <div className="max-w-md mb-16">
+            <ProductCard
+              title="Traderos Lite"
+              description="A performance-driven trading journal that helps you understand your results, behavior, and edge. Track every trade, measure your performance, and uncover the patterns behind your wins and losses."
+              link="https://traderos.qovavo.com"
+              isExternal={true}
+            />
           </div>
-          <div className="text-center mt-16">
-            <div className="bg-gradient-to-r from-[#1e293b] to-[#334155] rounded-2xl p-8 border border-gray-700 max-w-2xl mx-auto">
-              <h2 className="text-2xl font-bold text-white mb-4">Questions or Collaborations?</h2>
-              <p className="text-gray-300 mb-6">
-                Interested in partnerships, custom solutions, or have specific requirements? 
-                We'd love to hear from you and explore how we can work together.
-              </p>
-              <a
-                href="/contact"
-                className="inline-block bg-gradient-to-r from-blue-500 to-purple-600 text-white px-6 py-3 rounded-md font-medium hover:from-blue-600 hover:to-purple-700 hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-200"
-              >
-                Let's Talk Business
-              </a>
-            </div>
+
+          <div className="bg-[#131826] border border-[#1A2540] rounded-xl p-8 max-w-2xl hover:border-[#4361EE]/20 transition-colors">
+            <h2 className="text-xl font-bold text-[#DDE4F0] mb-3">Questions or Collaborations?</h2>
+            <p className="text-[#7B8BB0] mb-6 text-sm leading-relaxed">
+              Interested in partnerships, custom solutions, or have specific requirements?
+              We&apos;d love to hear from you and explore how we can work together.
+            </p>
+            <Link
+              href="/contact"
+              className="inline-flex items-center px-5 py-2.5 bg-[#4361EE] text-white text-sm font-semibold rounded-lg hover:bg-[#3451D1] transition-colors"
+              data-track="contact-us"
+            >
+              Let&apos;s Talk Business
+            </Link>
           </div>
         </div>
       </section>

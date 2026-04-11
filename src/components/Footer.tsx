@@ -5,49 +5,50 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#0f172a] border-t border-gray-800 text-gray-400">
-      <div className="max-w-7xl mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-3 gap-8">
-
-        {/* Left */}
+    <footer className="bg-[#0F1220] border-t border-[#1A2540]">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 grid grid-cols-1 md:grid-cols-3 gap-8">
         <div>
           <div className="flex items-center gap-2 mb-4">
-            <Image
-              src="/logo-icon.png"
-              alt="Qovavo"
-              width={32}
-              height={32}
-            />
-            <span className="text-white font-semibold text-lg">Qovavo</span>
+            <Image src="/logo-icon.png" alt="Qovavo" width={28} height={28} />
+            <span className="text-[#DDE4F0] font-semibold text-base tracking-tight">Qovavo</span>
           </div>
-
-          <p className="mb-4">
-            Empowering your digital journey with innovative tools and solutions.
+          <p className="text-[#7B8BB0] text-sm leading-relaxed">
+            Tools that help traders understand their performance and improve with real data.
           </p>
         </div>
 
-        {/* Products */}
         <div>
-          <h3 className="text-white font-semibold mb-4">Products</h3>
-          <ul className="space-y-2">
-            <li><Link href="/products">Traderos Lite</Link></li>
-            <li><Link href="/contact">Get In Touch</Link></li>
+          <h3 className="text-[#DDE4F0] font-semibold text-sm mb-4">Products</h3>
+          <ul className="space-y-3">
+            <li>
+              <Link href="/products" className="text-[#7B8BB0] text-sm hover:text-[#4361EE] transition-colors">
+                Traderos Lite
+              </Link>
+            </li>
+            <li>
+              <Link href="/contact" className="text-[#7B8BB0] text-sm hover:text-[#4361EE] transition-colors">
+                Get In Touch
+              </Link>
+            </li>
           </ul>
         </div>
 
-        {/* Company */}
         <div>
-          <h3 className="text-white font-semibold mb-4">Company</h3>
-          <ul className="space-y-2">
-            <li><Link href="/about">About Us</Link></li>
-            <li><Link href="/contact">Contact</Link></li>
+          <h3 className="text-[#DDE4F0] font-semibold text-sm mb-4">Company</h3>
+          <ul className="space-y-3">
+            <li>
+              <Link href="/contact" className="text-[#7B8BB0] text-sm hover:text-[#4361EE] transition-colors">
+                Contact
+              </Link>
+            </li>
           </ul>
         </div>
-
       </div>
 
-      {/* Bottom */}
-      <div className="border-t border-gray-800 text-center py-6 text-sm">
-        © {new Date().getFullYear()} Qovavo. All rights reserved.
+      <div className="border-t border-[#1A2540] py-6">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <p className="text-[#4A5880] text-sm">© {new Date().getFullYear()} Qovavo. All rights reserved.</p>
+        </div>
       </div>
     </footer>
   );

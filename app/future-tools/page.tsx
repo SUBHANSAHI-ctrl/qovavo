@@ -2,69 +2,71 @@ export default function FutureTools() {
   const futureTools = [
     {
       title: "AI Analytics Dashboard",
-      description: "Advanced artificial intelligence-powered analytics to help you make data-driven decisions with confidence. Real-time insights and predictive modeling."
+      description: "Advanced analytics to help you make data-driven decisions with confidence. Real-time insights and predictive modeling."
     },
     {
       title: "Smart Automation Suite",
-      description: "Intelligent automation tools that streamline your workflow and boost productivity across all your tasks. Machine learning-powered process optimization."
+      description: "Intelligent automation tools that streamline your workflow and boost productivity across all your tasks."
     },
     {
       title: "Collaborative Workspace",
-      description: "A unified platform for teams to collaborate seamlessly and manage projects efficiently in real-time. Integrated communication and file sharing."
+      description: "A unified platform for teams to collaborate seamlessly and manage projects efficiently in real-time."
     },
     {
       title: "Data Visualization Hub",
-      description: "Transform complex data into beautiful, interactive visualizations that tell compelling stories and drive informed decision-making."
+      description: "Transform complex data into clear, interactive visualizations that drive informed decision-making."
     },
     {
       title: "Cloud Integration Platform",
-      description: "Seamlessly connect and manage all your cloud services from one centralized platform with enterprise-grade security."
+      description: "Seamlessly connect and manage all your cloud services from one centralized platform."
     },
     {
       title: "Intelligent Assistant",
-      description: "AI-powered virtual assistant that learns your preferences and automates routine tasks to save you time and effort."
+      description: "AI-powered assistant that learns your preferences and automates routine tasks to save you time."
     }
   ];
 
   return (
-    <main className="min-h-screen bg-[#0f172a]">
+    <main className="min-h-screen bg-[#08090F] text-[#DDE4F0]">
       <section className="py-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
-              Future Tools
-            </h1>
-            <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-              Exciting new tools and features we're working on for the future of digital innovation
+        <div className="max-w-6xl mx-auto">
+          <div className="mb-12">
+            <p className="text-xs font-semibold text-[#4361EE] uppercase tracking-widest mb-3">Coming Soon</p>
+            <h1 className="text-4xl sm:text-5xl font-bold text-[#DDE4F0] mb-3 tracking-tight">Future Tools</h1>
+            <p className="text-[#7B8BB0] max-w-xl">
+              New tools and features we&apos;re working on for the future of digital innovation.
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mb-16">
             {futureTools.map((tool, index) => (
-              <div key={index} className="bg-[#1e293b] rounded-xl p-6 border border-gray-700 hover:border-blue-500 hover:shadow-lg hover:shadow-blue-500/20 transition-all duration-200">
-                <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg mb-4 flex items-center justify-center">
-                  <div className="w-6 h-6 bg-white rounded opacity-80"></div>
+              <div
+                key={index}
+                className="bg-[#131826] border border-[#1A2540] rounded-xl p-6 hover:border-[#4361EE]/30 transition-colors"
+              >
+                <div className="w-8 h-8 bg-[#4361EE]/10 rounded-lg mb-4 flex items-center justify-center">
+                  <div className="w-3 h-3 bg-[#4361EE] rounded-sm opacity-70"></div>
                 </div>
-                <h3 className="text-xl font-semibold text-white mb-3">{tool.title}</h3>
-                <p className="text-gray-400">{tool.description}</p>
+                <h3 className="font-bold text-[#DDE4F0] mb-2 text-sm">{tool.title}</h3>
+                <p className="text-[#7B8BB0] text-sm leading-relaxed">{tool.description}</p>
               </div>
             ))}
           </div>
-          <div className="text-center mt-16">
-            <div className="bg-gradient-to-r from-[#1e293b] to-[#334155] rounded-2xl p-8 border border-gray-700">
-              <h2 className="text-2xl font-bold text-white mb-4">Stay Updated</h2>
-              <p className="text-gray-300 mb-6">
-                Be the first to know when we launch new tools and features
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
-                <input
-                  type="email"
-                  placeholder="Enter your email"
-                  className="flex-1 px-4 py-2 bg-[#0f172a] border border-gray-600 rounded-md text-white placeholder-gray-400 focus:outline-none focus:border-blue-500"
-                />
-                <button className="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-6 py-2 rounded-md font-medium hover:from-blue-600 hover:to-purple-700 hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-200">
-                  Subscribe
-                </button>
-              </div>
+
+          <div className="bg-[#131826] border border-[#1A2540] rounded-xl p-8 max-w-lg">
+            <h2 className="text-xl font-bold text-[#DDE4F0] mb-2">Stay Updated</h2>
+            <p className="text-[#7B8BB0] text-sm mb-5">
+              Be the first to know when we launch new tools and features.
+            </p>
+            <div className="flex gap-2">
+              <input
+                type="email"
+                placeholder="Enter your email"
+                className="flex-1 px-3.5 py-2.5 bg-[#0A0C16] border border-[#1E2844] rounded-lg text-sm text-[#DDE4F0] placeholder-[#3A4A6A] focus:outline-none focus:border-[#4361EE] focus:ring-1 focus:ring-[#4361EE]/30 transition-colors"
+              />
+              <button className="bg-[#4361EE] text-white px-4 py-2.5 rounded-lg text-sm font-semibold hover:bg-[#3451D1] transition-colors whitespace-nowrap">
+                Subscribe
+              </button>
             </div>
           </div>
         </div>

@@ -6,6 +6,108 @@ html, body {
 }
 
 body {
-  background-color: #0f172a;
-  color: white;
+  background-color: #08090F;
+  color: #DDE4F0;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0F1220;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1E2844;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4361EE;
+}
+
+/* ---- Hero Visual Animations ---- */
+
+@keyframes draw-chart {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fade-in-hero {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-up-stat {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes card-float {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-7px); }
+}
+
+@keyframes dot-ring-expand {
+  0%   { transform: scale(1); opacity: 0.5; }
+  100% { transform: scale(3.5); opacity: 0; }
+}
+
+@keyframes live-blink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.35; }
+}
+
+/* Chart line draws itself */
+.chart-line {
+  stroke-dasharray: 430;
+  stroke-dashoffset: 430;
+  animation: draw-chart 2.6s cubic-bezier(0.4, 0, 0.2, 1) 0.5s forwards;
+}
+
+/* Fill fades in after line finishes */
+.chart-fill {
+  opacity: 0;
+  animation: fade-in-hero 0.8s ease-out 2.2s forwards;
+}
+
+/* End-point dot appears */
+.chart-dot {
+  opacity: 0;
+  animation: fade-in-hero 0.3s ease-out 2.8s forwards;
+}
+
+/* Expanding ring on dot — loops */
+.chart-dot-ring {
+  opacity: 0;
+  transform-origin: 320px 22px;
+  animation: dot-ring-expand 2s ease-out 3s infinite;
+}
+
+/* Stats fade up one by one */
+.stat-item {
+  opacity: 0;
+  transform: translateY(7px);
+  animation: fade-up-stat 0.5s ease-out forwards;
+}
+
+/* Gentle floating on the cards */
+.hero-card {
+  animation: card-float 8s ease-in-out 3.2s infinite;
+}
+.float-card-a {
+  animation: card-float 6s ease-in-out 2.5s infinite;
+}
+.float-card-b {
+  animation: card-float 7s ease-in-out 3.8s infinite;
+}
+
+/* Live indicator dot */
+.live-dot {
+  animation: live-blink 2s ease-in-out infinite;
 }
