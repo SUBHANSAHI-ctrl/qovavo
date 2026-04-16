@@ -22,7 +22,7 @@ const Footer = () => {
           <ul className="space-y-3">
             <li>
               <Link href="/products" className="text-[#7B8BB0] text-sm hover:text-[#4361EE] transition-colors">
-                Traderos Lite
+                Trakvex
               </Link>
             </li>
             <li>

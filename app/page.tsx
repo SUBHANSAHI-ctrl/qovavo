@@ -1,4 +1,5 @@
-import { BarChart3, Sparkles, ShieldCheck, TrendingUp, Target, Zap } from "lucide-react";
+import Image from "next/image";
+import { Sparkles, ShieldCheck, TrendingUp, Target, Zap } from "lucide-react";
 import Link from 'next/link';
 import HeroVisual from '@/src/components/HeroVisual';
 
@@ -9,7 +10,7 @@ export default function Home() {
       {/* Hero */}
       <section className="relative py-28 px-4 sm:px-6 lg:px-8 overflow-hidden">
         <div className="absolute inset-0 -z-10">
-          <div className="absolute top-0 left-1/4 w-[500px] h-[500px] bg-[#4361EE]/6 rounded-full blur-3xl"></div>
+          <div className="absolute top-0 left-1/4 w-125 h-125 bg-[#4361EE]/6 rounded-full blur-3xl"></div>
           <div className="absolute bottom-0 right-1/3 w-72 h-72 bg-[#2DD4BF]/4 rounded-full blur-3xl"></div>
         </div>
         <div className="max-w-6xl mx-auto">
@@ -41,9 +42,9 @@ export default function Home() {
                 <Link
                   href="/products"
                   className="inline-flex items-center justify-center px-7 py-3.5 border border-[#1E2844] text-[#7B8BB0] font-semibold rounded-lg hover:border-[#4361EE]/40 hover:text-[#DDE4F0] transition-all text-sm"
-                  data-track="start-traderos"
+                  data-track="start-trakvex"
                 >
-                  Start With Traderos
+                  Start With Trakvex
                 </Link>
               </div>
             </div>
@@ -75,7 +76,7 @@ export default function Home() {
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div className="bg-[#131826] border border-[#1A2540] rounded-xl p-5 hover:border-[#4361EE]/30 transition-colors">
-                <BarChart3 className="w-5 h-5 text-[#4361EE] mb-3" />
+                <TrendingUp className="w-5 h-5 text-[#4361EE] mb-3" />
                 <h3 className="font-semibold text-[#DDE4F0] mb-1 text-sm">Performance Clarity</h3>
                 <p className="text-[#7B8BB0] text-sm">See exactly how your trades are performing.</p>
               </div>
@@ -101,27 +102,27 @@ export default function Home() {
           <h2 className="text-3xl sm:text-4xl font-bold text-[#DDE4F0] mb-3 tracking-tight">Products Built for Traders</h2>
           <p className="text-[#7B8BB0] mb-12 max-w-xl">Each product solves a specific problem traders face.</p>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-            <div className="bg-[#131826] border border-[#1A2540] rounded-xl p-8 hover:border-[#4361EE]/40 transition-all">
-              <div className="flex items-center gap-3 mb-5">
-                <div className="w-10 h-10 bg-[#4361EE]/10 rounded-lg flex items-center justify-center">
-                  <BarChart3 className="w-5 h-5 text-[#4361EE]" />
-                </div>
-                <h3 className="text-xl font-bold text-[#DDE4F0]">Traderos Lite</h3>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+            {/* Trakvex */}
+            <div className="bg-[#131826] border border-[#1A2540] rounded-xl p-6 hover:border-[#4361EE]/40 transition-all flex flex-col">
+              <div className="flex items-center gap-3 mb-4">
+                <Image src="/traderos-logo.png" alt="Trakvex" width={36} height={36} className="rounded-lg" />
+                <h3 className="text-lg font-bold text-[#DDE4F0]">Trakvex</h3>
               </div>
-              <p className="text-[#7B8BB0] mb-6 leading-relaxed text-sm">
+              <p className="text-[#7B8BB0] mb-5 leading-relaxed text-sm">
                 A performance-driven trading journal that helps you understand your results, behavior, and edge. Track every trade, measure your performance, and uncover the patterns behind your wins and losses.
               </p>
-              <ul className="space-y-2.5 mb-7">
+              <ul className="space-y-2 mb-6 flex-1">
                 {[
                   'Track every trade with precision',
-                  'See your real win rate and performance metrics',
+                  'See your real win rate and metrics',
                   'Identify your best and worst setups',
                   'Detect patterns in your behavior',
-                  'Visualize your performance with charts',
+                  'Visualize performance with charts',
                 ].map((item) => (
                   <li key={item} className="flex items-center text-sm text-[#7B8BB0]">
-                    <span className="w-1.5 h-1.5 bg-[#4361EE] rounded-full mr-3 shrink-0"></span>
+                    <span className="w-1.5 h-1.5 bg-[#4361EE] rounded-full mr-2.5 shrink-0"></span>
                     {item}
                   </li>
                 ))}
@@ -130,43 +131,79 @@ export default function Home() {
                 href="https://traderos.qovavo.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center px-5 py-2.5 bg-[#4361EE] text-white text-sm font-semibold rounded-lg hover:bg-[#3451D1] transition-colors"
-                data-track="open-dashboard"
+                className="inline-flex items-center justify-center px-5 py-2.5 bg-[#4361EE] text-white text-sm font-semibold rounded-lg hover:bg-[#3451D1] transition-colors"
+                data-track="open-trakvex"
               >
                 Open Dashboard →
               </a>
             </div>
 
-            <div className="bg-[#131826] border border-[#1A2540] rounded-xl p-8">
-              <div className="flex items-center gap-3 mb-5">
-                <div className="w-10 h-10 bg-[#2DD4BF]/10 rounded-lg flex items-center justify-center">
-                  <Sparkles className="w-5 h-5 text-[#2DD4BF]" />
-                </div>
-                <h3 className="text-xl font-bold text-[#DDE4F0]">More Tools Coming</h3>
+            {/* Fluxivo */}
+            <div className="bg-[#131826] border border-[#1A2540] rounded-xl p-6 hover:border-[#4361EE]/40 transition-all flex flex-col">
+              <div className="flex items-center gap-3 mb-4">
+                <Image src="/FLUXIVO.png" alt="Fluxivo" width={36} height={36} className="rounded-lg" />
+                <h3 className="text-lg font-bold text-[#DDE4F0]">Fluxivo</h3>
               </div>
-              <p className="text-[#7B8BB0] mb-6 leading-relaxed text-sm">
+              <p className="text-[#7B8BB0] mb-5 leading-relaxed text-sm">
+                A market intelligence tool that helps you understand news, its impact, and what it means for your trades. Cut through the noise, see what truly matters, and react with clarity and confidence.
+              </p>
+              <ul className="space-y-2 mb-6 flex-1">
+                {[
+                  'Stay updated with relevant market news',
+                  'Understand how events affect your pairs',
+                  'Get clear summaries without noise',
+                  'Identify market direction and volatility',
+                  'Learn the reasoning behind price moves',
+                ].map((item) => (
+                  <li key={item} className="flex items-center text-sm text-[#7B8BB0]">
+                    <span className="w-1.5 h-1.5 bg-[#4361EE] rounded-full mr-2.5 shrink-0"></span>
+                    {item}
+                  </li>
+                ))}
+              </ul>
+              <a
+                href="https://fluxivo.qovavo.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center px-5 py-2.5 bg-[#4361EE] text-white text-sm font-semibold rounded-lg hover:bg-[#3451D1] transition-colors"
+                data-track="open-fluxivo"
+              >
+                Open Dashboard →
+              </a>
+            </div>
+
+            {/* More Tools Coming */}
+            <div className="bg-[#131826] border border-[#1A2540] rounded-xl p-6 flex flex-col">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-9 h-9 bg-[#2DD4BF]/10 rounded-lg flex items-center justify-center">
+                  <Sparkles className="w-4 h-4 text-[#2DD4BF]" />
+                </div>
+                <h3 className="text-lg font-bold text-[#DDE4F0]">More Tools Coming</h3>
+              </div>
+              <p className="text-[#7B8BB0] mb-5 leading-relaxed text-sm flex-1">
                 We&apos;re building a full ecosystem of tools for traders — from analytics to automation. Stay tuned for what&apos;s next.
               </p>
-              <ul className="space-y-2.5 mb-7">
+              <ul className="space-y-2 mb-6">
                 {[
                   'Advanced analytics tools',
                   'Automation features',
                   'Performance optimization',
                 ].map((item) => (
                   <li key={item} className="flex items-center text-sm text-[#7B8BB0]">
-                    <span className="w-1.5 h-1.5 bg-[#2DD4BF]/50 rounded-full mr-3 shrink-0"></span>
+                    <span className="w-1.5 h-1.5 bg-[#2DD4BF]/50 rounded-full mr-2.5 shrink-0"></span>
                     {item}
                   </li>
                 ))}
               </ul>
               <Link
                 href="/contact"
-                className="inline-flex items-center px-5 py-2.5 border border-[#4361EE]/40 text-[#4361EE] text-sm font-semibold rounded-lg hover:bg-[#4361EE]/10 transition-colors"
+                className="inline-flex items-center justify-center px-5 py-2.5 border border-[#4361EE]/40 text-[#4361EE] text-sm font-semibold rounded-lg hover:bg-[#4361EE]/10 transition-colors"
                 data-track="early-access"
               >
                 Get Early Access →
               </Link>
             </div>
+
           </div>
         </div>
       </section>
@@ -221,9 +258,9 @@ export default function Home() {
               <Link
                 href="/products"
                 className="inline-flex items-center px-7 py-3.5 bg-[#4361EE] text-white font-semibold rounded-lg hover:bg-[#3451D1] transition-colors text-sm"
-                data-track="start-traderos"
+                data-track="start-trakvex"
               >
-                Start With Traderos →
+                Start With Trakvex →
               </Link>
             </div>
           </div>

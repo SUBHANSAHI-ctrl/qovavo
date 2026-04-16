@@ -16,12 +16,25 @@ export default function Products() {
             </p>
           </div>
 
-          <div className="max-w-md mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
             <ProductCard
-              title="Traderos Lite"
+              title="Trakvex"
               description="A performance-driven trading journal that helps you understand your results, behavior, and edge. Track every trade, measure your performance, and uncover the patterns behind your wins and losses."
+              logoSrc="/traderos-logo.png"
               link="https://traderos.qovavo.com"
               isExternal={true}
+            />
+            <ProductCard
+              title="Fluxivo"
+              description="A market intelligence tool that helps you understand news, its impact, and what it means for your trades. Cut through the noise, see what truly matters, and react with clarity and confidence."
+              logoSrc="/FLUXIVO.png"
+              link="https://fluxivo.qovavo.com/"
+              isExternal={true}
+            />
+            <ProductCard
+              title="More Tools Coming"
+              description="We're building a full ecosystem of tools for traders — from analytics to automation. Stay tuned for what's next."
+              comingSoon={true}
             />
           </div>
 

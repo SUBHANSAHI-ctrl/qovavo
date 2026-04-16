@@ -3,6 +3,7 @@ import Image from "next/image";
 interface ProductCardProps {
   title: string;
   description: string;
+  logoSrc?: string;
   link?: string;
   isExternal?: boolean;
   comingSoon?: boolean;
@@ -11,6 +12,7 @@ interface ProductCardProps {
 const ProductCard = ({
   title,
   description,
+  logoSrc,
   link,
   isExternal,
   comingSoon,
@@ -36,13 +38,15 @@ const ProductCard = ({
   if (isExternal && link) {
     return (
       <div className="bg-[#131826] border border-[#1A2540] rounded-xl p-6 hover:border-[#4361EE]/40 transition-all">
-        <Image
-          src="/traderos-logo.png"
-          alt="Traderos Lite"
-          width={40}
-          height={40}
-          className="mb-4 rounded-lg"
-        />
+        {logoSrc && (
+          <Image
+            src={logoSrc}
+            alt={title}
+            width={40}
+            height={40}
+            className="mb-4 rounded-lg"
+          />
+        )}
         <h3 className="text-base font-semibold text-[#DDE4F0] mb-2">{title}</h3>
         <p className="text-[#7B8BB0] text-sm mb-5">{description}</p>
         <a
@@ -51,7 +55,7 @@ const ProductCard = ({
           rel="noopener noreferrer"
           className="inline-block bg-[#4361EE] text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-[#3451D1] transition-colors w-full text-center"
         >
-          Start Trading Now →
+          Open Dashboard →
         </a>
       </div>
     );
