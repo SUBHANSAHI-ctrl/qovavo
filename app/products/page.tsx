@@ -9,31 +9,31 @@ export default function Products() {
           <div className="mb-12">
             <p className="text-xs font-semibold text-[#4361EE] uppercase tracking-widest mb-3">Our Products</p>
             <h1 className="text-4xl sm:text-5xl font-bold text-[#DDE4F0] mb-3 tracking-tight">
-              Products Built for Traders
+              Tools That Give Traders a Real Edge
             </h1>
             <p className="text-[#7B8BB0] max-w-xl">
-              Discover our tools designed to help traders understand their performance and improve with real data.
+              Two focused tools built for retail traders who want to improve with data — not opinions, signals, or guesswork.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
             <ProductCard
               title="Trakvex"
-              description="A performance-driven trading journal that helps you understand your results, behavior, and edge. Track every trade, measure your performance, and uncover the patterns behind your wins and losses."
+              description="Trakvex is your trading journal with real analytics. Log every trade, measure your true win rate, and uncover the habits costing you money. Know your edge — or build one."
               logoSrc="/traderos-logo.png"
               link="https://traderos.qovavo.com"
               isExternal={true}
             />
             <ProductCard
               title="Fluxivo"
-              description="A market intelligence tool that helps you understand news, its impact, and what it means for your trades. Cut through the noise, see what truly matters, and react with clarity and confidence."
+              description="Fluxivo cuts through the noise and delivers what matters: AI-curated market news with instant impact analysis for your exact trading pairs. Know before you trade."
               logoSrc="/FLUXIVO.png"
               link="https://fluxivo.qovavo.com/"
               isExternal={true}
             />
             <ProductCard
               title="More Tools Coming"
-              description="We're building a full ecosystem of tools for traders — from analytics to automation. Stay tuned for what's next."
+              description="The Qovavo ecosystem is growing. More tools for risk management, execution, and trade optimization are in development."
               comingSoon={true}
             />
           </div>

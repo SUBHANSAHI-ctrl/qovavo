@@ -20,7 +20,7 @@ export default function Home() {
             <div>
               <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#4361EE]/10 border border-[#4361EE]/20 mb-8">
                 <span className="w-1.5 h-1.5 rounded-full bg-[#2DD4BF]"></span>
-                <span className="text-[#6681F4] text-xs font-medium">Tools for traders who want to improve</span>
+                <span className="text-[#6681F4] text-xs font-medium">Part of the Qovavo Ecosystem</span>
               </div>
               <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold leading-[1.08] mb-6 tracking-tight">
                 The Operating<br />
@@ -29,7 +29,7 @@ export default function Home() {
                 </span>
               </h1>
               <p className="text-lg text-[#7B8BB0] mb-10 leading-relaxed">
-                Qovavo creates tools that help traders understand their performance, fix their mistakes, and make smarter decisions — with real data.
+                Two tools. One mission: trade with clarity. Know your performance. Know the market. Improve with real data — not gut feeling.
               </p>
               <div className="flex flex-col sm:flex-row gap-3">
                 <Link
@@ -63,27 +63,27 @@ export default function Home() {
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <p className="text-xs font-semibold text-[#2DD4BF] uppercase tracking-widest mb-3">Our Mission</p>
-              <h2 className="text-3xl sm:text-4xl font-bold text-[#DDE4F0] mb-6 tracking-tight">What We Do</h2>
+              <p className="text-xs font-semibold text-[#2DD4BF] uppercase tracking-widest mb-3">What We Build</p>
+              <h2 className="text-3xl sm:text-4xl font-bold text-[#DDE4F0] mb-6 tracking-tight">Two Tools. One Goal.</h2>
               <div className="space-y-4">
                 <p className="text-[#7B8BB0] leading-relaxed">
-                  We build digital tools for traders who want more than guesses and opinions. Our focus is simple: give you clarity on your performance, help you understand your behavior, and improve how you trade over time.
+                  Most traders struggle not because they lack a strategy — but because they lack data. They don&apos;t know their real win rate, their costliest habits, or how the market is reacting to events. Qovavo builds tools that fix that.
                 </p>
                 <p className="text-[#7B8BB0] leading-relaxed">
-                  Instead of selling strategies, we build systems. Tools that show you what&apos;s working, what&apos;s not, and where you&apos;re losing money.
+                  Instead of selling signals or strategies, we give you the infrastructure to understand your trading and improve on your own terms.
                 </p>
               </div>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div className="bg-[#131826] border border-[#1A2540] rounded-xl p-5 hover:border-[#4361EE]/30 transition-colors">
                 <TrendingUp className="w-5 h-5 text-[#4361EE] mb-3" />
-                <h3 className="font-semibold text-[#DDE4F0] mb-1 text-sm">Performance Clarity</h3>
-                <p className="text-[#7B8BB0] text-sm">See exactly how your trades are performing.</p>
+                <h3 className="font-semibold text-[#DDE4F0] mb-1 text-sm">Know Your Real Numbers</h3>
+                <p className="text-[#7B8BB0] text-sm">See your actual win rate, profit factor, and performance by setup.</p>
               </div>
               <div className="bg-[#131826] border border-[#1A2540] rounded-xl p-5 hover:border-[#4361EE]/30 transition-colors">
                 <Target className="w-5 h-5 text-[#2DD4BF] mb-3" />
-                <h3 className="font-semibold text-[#DDE4F0] mb-1 text-sm">Behavior Insights</h3>
-                <p className="text-[#7B8BB0] text-sm">Understand the decisions driving your results.</p>
+                <h3 className="font-semibold text-[#DDE4F0] mb-1 text-sm">Fix What&apos;s Costing You</h3>
+                <p className="text-[#7B8BB0] text-sm">Find the behavioral patterns behind your losses — not just your P&amp;L.</p>
               </div>
               <div className="bg-[#131826] border border-[#1A2540] rounded-xl p-5 sm:col-span-2 hover:border-[#4361EE]/30 transition-colors">
                 <Zap className="w-5 h-5 text-[#4361EE] mb-3" />
@@ -99,8 +99,8 @@ export default function Home() {
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-[#08090F]">
         <div className="max-w-6xl mx-auto">
           <p className="text-xs font-semibold text-[#4361EE] uppercase tracking-widest mb-3">Our Tools</p>
-          <h2 className="text-3xl sm:text-4xl font-bold text-[#DDE4F0] mb-3 tracking-tight">Products Built for Traders</h2>
-          <p className="text-[#7B8BB0] mb-12 max-w-xl">Each product solves a specific problem traders face.</p>
+          <h2 className="text-3xl sm:text-4xl font-bold text-[#DDE4F0] mb-3 tracking-tight">Two Products. Two Edges.</h2>
+          <p className="text-[#7B8BB0] mb-12 max-w-xl">Built for retail traders who want clarity — on their performance and on the market.</p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
 
@@ -111,15 +111,15 @@ export default function Home() {
                 <h3 className="text-lg font-bold text-[#DDE4F0]">Trakvex</h3>
               </div>
               <p className="text-[#7B8BB0] mb-5 leading-relaxed text-sm">
-                A performance-driven trading journal that helps you understand your results, behavior, and edge. Track every trade, measure your performance, and uncover the patterns behind your wins and losses.
+                Trakvex is your trading journal with real analytics. Log every trade, measure your true win rate, and uncover the habits costing you money. Know your edge — or build one.
               </p>
               <ul className="space-y-2 mb-6 flex-1">
                 {[
-                  'Track every trade with precision',
-                  'See your real win rate and metrics',
+                  'Log every trade with precision',
+                  'See your real win rate and profit factor',
                   'Identify your best and worst setups',
-                  'Detect patterns in your behavior',
-                  'Visualize performance with charts',
+                  'Spot the behavioral patterns behind losses',
+                  'Visualize your equity curve and progress',
                 ].map((item) => (
                   <li key={item} className="flex items-center text-sm text-[#7B8BB0]">
                     <span className="w-1.5 h-1.5 bg-[#4361EE] rounded-full mr-2.5 shrink-0"></span>
@@ -134,7 +134,7 @@ export default function Home() {
                 className="inline-flex items-center justify-center px-5 py-2.5 bg-[#4361EE] text-white text-sm font-semibold rounded-lg hover:bg-[#3451D1] transition-colors"
                 data-track="open-trakvex"
               >
-                Open Dashboard →
+                Start Tracking Free →
               </a>
             </div>
 
@@ -145,15 +145,15 @@ export default function Home() {
                 <h3 className="text-lg font-bold text-[#DDE4F0]">Fluxivo</h3>
               </div>
               <p className="text-[#7B8BB0] mb-5 leading-relaxed text-sm">
-                A market intelligence tool that helps you understand news, its impact, and what it means for your trades. Cut through the noise, see what truly matters, and react with clarity and confidence.
+                Fluxivo cuts through the noise and delivers what matters: AI-curated market news with instant impact analysis for your exact trading pairs. Know before you trade.
               </p>
               <ul className="space-y-2 mb-6 flex-1">
                 {[
-                  'Stay updated with relevant market news',
-                  'Understand how events affect your pairs',
-                  'Get clear summaries without noise',
-                  'Identify market direction and volatility',
-                  'Learn the reasoning behind price moves',
+                  'News filtered to your exact trading pairs',
+                  'Instant AI analysis of market impact',
+                  'Bullish, Bearish, or Volatile signals per pair',
+                  'Confidence scores to filter out noise',
+                  'Scannable cards — no reading required',
                 ].map((item) => (
                   <li key={item} className="flex items-center text-sm text-[#7B8BB0]">
                     <span className="w-1.5 h-1.5 bg-[#4361EE] rounded-full mr-2.5 shrink-0"></span>
@@ -168,7 +168,7 @@ export default function Home() {
                 className="inline-flex items-center justify-center px-5 py-2.5 bg-[#4361EE] text-white text-sm font-semibold rounded-lg hover:bg-[#3451D1] transition-colors"
                 data-track="open-fluxivo"
               >
-                Open Dashboard →
+                Read the Market Feed →
               </a>
             </div>
 
@@ -181,13 +181,13 @@ export default function Home() {
                 <h3 className="text-lg font-bold text-[#DDE4F0]">More Tools Coming</h3>
               </div>
               <p className="text-[#7B8BB0] mb-5 leading-relaxed text-sm flex-1">
-                We&apos;re building a full ecosystem of tools for traders — from analytics to automation. Stay tuned for what&apos;s next.
+                The Qovavo ecosystem is growing. More tools for risk management, execution, and trade optimization are in development.
               </p>
               <ul className="space-y-2 mb-6">
                 {[
-                  'Advanced analytics tools',
+                  'Risk management tools',
                   'Automation features',
-                  'Performance optimization',
+                  'Execution optimization',
                 ].map((item) => (
                   <li key={item} className="flex items-center text-sm text-[#7B8BB0]">
                     <span className="w-1.5 h-1.5 bg-[#2DD4BF]/50 rounded-full mr-2.5 shrink-0"></span>
@@ -212,7 +212,7 @@ export default function Home() {
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-[#0F1220]">
         <div className="max-w-6xl mx-auto">
           <p className="text-xs font-semibold text-[#2DD4BF] uppercase tracking-widest mb-3">Why Qovavo</p>
-          <h2 className="text-3xl sm:text-4xl font-bold text-[#DDE4F0] mb-3 tracking-tight">Built for Traders Who Want to Improve</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold text-[#DDE4F0] mb-3 tracking-tight">Designed for Traders Serious About Getting Better</h2>
           <p className="text-[#7B8BB0] mb-12">Not hype. Not signals. Just tools that help you get better.</p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
@@ -220,22 +220,22 @@ export default function Home() {
               <div className="w-9 h-9 bg-[#4361EE]/10 rounded-lg flex items-center justify-center mb-4">
                 <TrendingUp className="w-4 h-4 text-[#4361EE]" />
               </div>
-              <h3 className="font-bold text-[#DDE4F0] mb-2">Understand Your Performance</h3>
-              <p className="text-[#7B8BB0] text-sm">See what&apos;s actually working in your trading.</p>
+              <h3 className="font-bold text-[#DDE4F0] mb-2">Know Your Real Numbers</h3>
+              <p className="text-[#7B8BB0] text-sm">See your actual win rate, best setups, and biggest mistakes — with data.</p>
             </div>
             <div className="bg-[#131826] border border-[#1A2540] rounded-xl p-6 hover:border-[#4361EE]/30 transition-colors">
               <div className="w-9 h-9 bg-[#4361EE]/10 rounded-lg flex items-center justify-center mb-4">
                 <Target className="w-4 h-4 text-[#4361EE]" />
               </div>
               <h3 className="font-bold text-[#DDE4F0] mb-2">Fix Costly Mistakes</h3>
-              <p className="text-[#7B8BB0] text-sm">Identify patterns that lead to losses.</p>
+              <p className="text-[#7B8BB0] text-sm">Spot the habits and patterns that consistently drain your account.</p>
             </div>
             <div className="bg-[#131826] border border-[#1A2540] rounded-xl p-6 hover:border-[#2DD4BF]/30 transition-colors">
               <div className="w-9 h-9 bg-[#2DD4BF]/10 rounded-lg flex items-center justify-center mb-4">
                 <ShieldCheck className="w-4 h-4 text-[#2DD4BF]" />
               </div>
               <h3 className="font-bold text-[#DDE4F0] mb-2">Grow With Data</h3>
-              <p className="text-[#7B8BB0] text-sm">Make decisions based on real insights, not emotions.</p>
+              <p className="text-[#7B8BB0] text-sm">Replace guesswork with objective data from your own trading history.</p>
             </div>
           </div>
         </div>
@@ -250,7 +250,7 @@ export default function Home() {
             <div className="relative max-w-2xl">
               <p className="text-xs font-semibold text-[#4361EE] uppercase tracking-widest mb-4">Ready to Start</p>
               <h2 className="text-3xl sm:text-4xl font-bold text-[#DDE4F0] mb-5 tracking-tight">
-                Start Improving Your Trading
+                Stop Guessing. Start Improving.
               </h2>
               <p className="text-[#7B8BB0] mb-8 leading-relaxed">
                 You don&apos;t need another strategy. You need to understand your current one.

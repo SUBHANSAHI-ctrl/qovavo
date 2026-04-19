@@ -13,7 +13,7 @@ const Footer = () => {
             <span className="text-[#DDE4F0] font-semibold text-base tracking-tight">Qovavo</span>
           </div>
           <p className="text-[#7B8BB0] text-sm leading-relaxed">
-            Tools that help traders understand their performance and improve with real data.
+            Helping retail traders improve through clarity — on their performance and on the market.
           </p>
         </div>
 
