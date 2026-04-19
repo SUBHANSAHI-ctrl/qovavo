@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Qovavo — The Operating System for Traders",
     description: "Tools that help traders understand their performance, fix their mistakes, and improve with real data.",
-    images: ["https://qovavo.com/twitter-image.png"],
+    images: ["https://qovavo.com/og-image.png"],
     creator: "@qovavo",
   },
   robots: {
