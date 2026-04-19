@@ -7,16 +7,16 @@ import Footer from '@/src/components/Footer';
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Qovavo — The Operating System for Traders",
-  description: "Tools that help traders understand their performance, fix their mistakes, and improve with real data.",
-  keywords: "trading journal, performance tracking, trader tools, trading analytics, Qovavo, Traderos",
+  title: "Qovavo — The Trading Operating System | Performance & Market Intelligence",
+  description: "Qovavo builds tools that help retail traders improve with real data. Track your performance with Trakvex. Understand the market with Fluxivo. No hype, no signals — just clarity.",
+  keywords: "trading journal, trading analytics, market intelligence, forex trading tools, crypto trading journal, trading performance tracker, retail trader tools, trade tracking, win rate, profit factor, Qovavo, Trakvex, Fluxivo",
   authors: [{ name: "Qovavo Team" }],
   creator: "Qovavo",
   publisher: "Qovavo",
   metadataBase: new URL("https://qovavo.com"),
   openGraph: {
-    title: "Qovavo — The Operating System for Traders",
-    description: "Tools that help traders understand their performance, fix their mistakes, and improve with real data.",
+    title: "Qovavo — The Trading Operating System | Performance & Market Intelligence",
+    description: "Qovavo builds tools that help retail traders improve with real data. Track your performance with Trakvex. Understand the market with Fluxivo. No hype, no signals — just clarity.",
     url: "https://qovavo.com",
     siteName: "Qovavo",
     images: [
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
         url: "https://qovavo.com/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Qovavo - The Operating System for Traders"
+        alt: "Qovavo - The Trading Operating System"
       }
     ],
     locale: "en_US",
@@ -32,8 +32,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Qovavo — The Operating System for Traders",
-    description: "Tools that help traders understand their performance, fix their mistakes, and improve with real data.",
+    title: "Qovavo — The Trading Operating System | Performance & Market Intelligence",
+    description: "Qovavo builds tools that help retail traders improve with real data. Track your performance with Trakvex. Understand the market with Fluxivo. No hype, no signals — just clarity.",
     images: ["https://qovavo.com/og-image.png"],
     creator: "@qovavo",
   },
